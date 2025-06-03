@@ -1,7 +1,7 @@
 import Image from "next/image";
-import { Card } from "@repo/ui/card";
 import { Gradient } from "@repo/ui/gradient";
 import { TurborepoLogo } from "@repo/ui/turborepo-logo";
+import { Card, CardHeader, CardTitle } from "@repo/ui/components/card";
 
 const LINKS = [
   {
@@ -52,7 +52,13 @@ export default function Page() {
               width={100}
             />
           </a>
+         
         </div>
+        <Card className="w-full max-w-md" >
+          <CardHeader>
+            <CardTitle>Hello</CardTitle>
+          </CardHeader>
+        </Card>
       </div>
 
       <div className="relative flex place-items-center ">
@@ -105,11 +111,11 @@ export default function Page() {
       </div>
 
       <div className="grid mb-32 text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        {LINKS.map(({ title, href, description }) => (
+        {/* {LINKS.map(({ title, href, description }) => (
           <Card href={href} key={title} title={title}>
             {description}
           </Card>
-        ))}
+        ))} */}
       </div>
     </main>
   );
