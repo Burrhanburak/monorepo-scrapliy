@@ -5,7 +5,16 @@
       {
         "name": "next"
       }
-    ]
+    ],
+    "paths": {
+      "@repo/ui/*": ["../../packages/ui/src/*"],
+      "@/*": ["./app/*", "./components/*", "./*"],
+      "utils": ["./lib/utils"],
+      "components": ["./components/*"],
+      "ui": ["./components/ui/*"],
+      "lib": ["./lib/*"],
+      "hooks": ["./hooks/*"]
+    }
   },
   "include": [
     "**/*.ts",
